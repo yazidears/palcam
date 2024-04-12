@@ -3,38 +3,99 @@
     <head>
         <title>My First Web Page</title>
         <style>
-            body{
-                background-color: #201c1c;  
+            @keyframes uwu{
+                0%{
+                    transform: translateY(100px);
+                    opacity:0;
+                }
+                100%{
+                    transform: translateY(0);
+                }
             }
+            body{
+                background-color: #201c1c;
+            }
+            .ls{
+                font-size: 1.2em;
+                font-weight: bold;
+                transition:cubic-bezier(1, 0, 0, 1) 0.5s;
+            }
+            .title {
+                color: white;
+                font-size: 2em;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 20px;
+
+            }	
             .one {
                 color: red;
                 background-color: white;
+                border: solid 3px red;
+                border-radius: 10px;
+                padding: 10px;
+                animation: uwu 1s 1s 1 forwards ease-in-out;
+
+                margin-bottom:10px;
             }
             .two {
                 color: blue;
+                border-radius: 10px;
+                padding: 10px;                
+                animation: uwu 1.3s 1s 1 forwards ease-in-out;
+
+                margin-bottom:10px;
+
                 background-color: white;
+                border: 1px solid black;
+
             }
             .three {
                 color: green;
-                background-color: yellow;
+                border-radius: 10px;
+                padding: 10px;
+                animation: uwu 1.4s 1s 1 forwards ease-in-out;
 
+                margin-bottom:10px;
+
+                background-color: yellow;
+                border: 3px dotted red;
             }
             .four {
                 color: yellow;
+                border-radius: 10px;
+                margin-bottom:10px;
+                animation: uwu 1.45s 1s 1 forwards ease-in-out;
+
+                padding: 10px;
+                border: 4px solid white;
             }
             .five {
                 color: purple;
+                border-radius: 10px;
+                padding: 10px;
+                animation: uwu 1.50s 1s 1 forwards ease-in-out;
+
                 background-color:pink;
+    
+            }
+            .ls:hover{
+                background-color: #f1f1f1;
+                color: black;
+                border: 1px solid black;
+                scale: 1.2;
             }
         </style>
     </head>
     <body>
+        <h1 class="title">My list of elements :D</h1>
+        <p class="tip">you should try hovering the elements!</p>
         <ul>
-            <li class="one">Element one</li>
-            <li class="two">Element two</li>
-            <li class="three">Element three</li>
-            <li class="four">Element four</li>
-            <li class="five">Element five</li>
+            <li class="one ls">Element one</li>
+            <li class="two ls">Element two</li>
+            <li class="three ls">Element three</li>
+            <li class="four ls">Element four</li>
+            <li class="five ls">Element five</li>
         </ul>
     </body>
 </html>
