@@ -5,9 +5,9 @@
 }
 
 body {
-  background: url("https://i.imgur.com/4MuY3MR.png") no-repeat fixed;
+  background: url("https://cdn.dynamicwallpaper.club/wallpapers/jgx0pz9egye/thumbs/1200/1.jpg") no-repeat fixed;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
   font-family: "Roboto", sans-serif;
   display: grid;
   place-items: center;
@@ -20,7 +20,7 @@ input {
 .app-window {
   --br: 14px;
   max-width: 1300px;
-  width: 100%;
+  width: 90%;
   border-radius: var(--br);
   display: grid;
   grid-template-columns: 220px auto;
@@ -28,6 +28,7 @@ input {
   border: 1px solid rgba(0, 0, 0, 0.4);
   overflow: hidden;
   color: #fff;
+  margin-top: 20em;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(15px);
 }
